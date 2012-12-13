@@ -2,7 +2,13 @@ div.list div.block.item {
 	position: relative;
 	padding: 5px;
 }
-
+div.block-texte-image {
+	display: block;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	overflow: hidden;
+}
 div.list div.item div.block-content ul {
 	display: block;
 	position: absolute;

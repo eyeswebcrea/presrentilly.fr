@@ -1,7 +1,7 @@
 @import "fonctions.less";
 
 body {
-	background: #1C1919;
+	background: #79c0c6;
 }
 
 /* Reset style */
@@ -11,8 +11,30 @@ h2.block-title {
 }
 
 div#header {
-	z-index: 2000;
+	z-index: 1000;
 	position: relative;
+	.borderRadiusTOP();
+	
+	h1 {
+		color: darken(@rouge, 10%);
+		text-shadow: 1px 1px 2px darken(@rouge, 30%);
+		font-weight: bold;
+		text-transform: capitalize;
+		font-family: 'Aladin', sans-serif;
+		overflow: hidden;
+		
+		img{
+			float: left;
+			padding-top:10px;
+		}
+		p{
+			float: left;
+			padding-top:10px;
+			padding-left:20px;
+		}
+	
+	}
+	
 }
 
 
@@ -27,6 +49,10 @@ p {
 div#footer, div#footer-content {
 	overflow: hidden;
 }
+div#footer {
+	background-color: #174f93;
+	margin-top: 10px;
+}
 
 ul.referencement li a { color: transparent !important; }
 
@@ -35,6 +61,15 @@ ul.referencement li a { color: transparent !important; }
 div.slides_container, div.slides {
 	height: 250px;
 	width: 950px;
+}
+
+div.images-index {
+	margin-top: 50px;
+}
+
+div.images-index div.slides_container, div.images-index div.slides {
+	width: 456px;
+	height: 396px;
 }
 
 /* #email-link */
@@ -87,6 +122,7 @@ div#page {
 	
 	div#body-content {
 		min-height: 600px;
+		
 	}
 	
 	div.menu > ul > li:hover ul {
@@ -109,7 +145,57 @@ div#page {
 		background: white;
 		color: black;
 	}
+/*
+ * Les positionnement titres premiere page(index)
+ */
 
+/*
+ * La présentation du plan
+ */
+	.cadrageplan {
+		padding-top: 50px;
+	}
+/*
+ * La Description du lieu
+ */
+	div.parctexte {
+		font-style: italic;
+	}
+/*
+ * L'Affichage administratif
+ */
+	div.admin {
+		padding: 5px;
+		color: lightgrey;
+		text-transform: uppercase;
+		font-weight: bolder;
+		
+	}
+	div.art {
+		padding: 10px;
+		color: red;
+	}
+	div.art p.artdetail {
+		padding: 10px;
+		text-shadow: 1px 1px 2px darken(@rouge, 30%);
+		display: block;
+	}
+	div.expo {
+		padding: 15px;
+		color: blue;
+	}
+	div.expo p.expodetail {
+		padding: 5px;
+		text-shadow: 1px 1px 2px darken(@blue, 20%);
+	}
+	div.conf {
+		padding: 10px;
+		color: brown;
+	}
+	div.conf p.confdetail {
+		padding: 15px;
+		text-shadow: 1px 1px 2px darken(@brown, 50%);
+	}
 /*
  *  Les formulaire
  */

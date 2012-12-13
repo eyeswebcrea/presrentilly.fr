@@ -22,4 +22,9 @@ class DefaultController extends Controller
 	{
 		return $this->render("SiteHomeBundle:Default:lacarte.html.twig");
 	}
+	
+	public function viewPageLesServicesAction()
+	{
+		return $this->render("SiteHomeBundle:Default:lesservices.html.twig");	
+	}
 }

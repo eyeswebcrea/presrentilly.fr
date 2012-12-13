@@ -36,6 +36,9 @@
 				<div class="block-content">
 					{{ article.texte | raw }}
 				</div>
+				<div class="span-5 last block-srcshot">
+							<img src="{{ image(article.getPathAbsoluteLocalLogo()).forceResize(400, 300) }}" alt="{{ article.getTitre() }}">
+				</div>
 			{% endfor %}
 		</div>
 	</div>
