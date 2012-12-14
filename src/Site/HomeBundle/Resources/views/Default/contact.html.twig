@@ -32,7 +32,7 @@
 	
 		<div class="span-8 prepend-1 prepend-top last append-bottom" id="contact">
 			{% for article in boucleArticles({ "idArticle" : 3 }) %}
-				<h2 class="block-title">{{ article.titre }}</h2>
+				<h2 class="block-title">{# {{ article.titre }} #}</h2>
 				<div class="block-content">
 					{{ article.texte | raw }}
 				</div>
